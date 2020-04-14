@@ -12,7 +12,7 @@
 
   - File -> Swift Packagess -> Add Package Dependency
 
-  - Использовать URL https://github.com/kmadiar/KenesWidget
+  - Использовать URL https://github.com/zhombie/KenesWidget
 
 - Импортировать сам виджет 
 ```swift
