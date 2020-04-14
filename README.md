@@ -1,26 +1,28 @@
 # KenesWidget
 
-1. Добавить в Info.plist
+- Добавить в Info.plist
 
+```
 <key>NSAppleMusicUsageDescription</key>
 <string>Needs to make video calls</string>
 <key>NSCameraUsageDescription</key>
 <string>Needs to make video calls</string>
+```
+- Добавить Swift package
 
-2. Добавить Swift package
+  - File -> Swift Packagess -> Add Package Dependency
 
-File -> Swift Packagess -> Add Package Dependency
+  - Использовать URL https://github.com/kmadiar/KenesWidget
 
-3. Использовать URL
-https://github.com/zhombie/KenesWidget
-
-4. Импортировать сам виджет 
-
+- Импортировать сам виджет 
+```swift
 import KenesWidget
+```
 
-5. Добавить код создания виджета, использовать хост системы
-
+- Добавить код создания виджета, использовать хост системы
+```swift
 let url = URL(string: "https://example.com")!
 if let widget = KenesWidet(url) {
     present(widget, animated: true)
 }
+```
