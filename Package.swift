@@ -24,8 +24,5 @@ let package = Package(
         .target(
             name: "KenesWidget",
             dependencies: []),
-        .testTarget(
-            name: "KenesWidgetTests",
-            dependencies: ["KenesWidget"]),
     ]
 )
