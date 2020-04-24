@@ -10,7 +10,6 @@ public final class KenesWidet: SFSafariViewController {
         }
 
         let config = SFSafariViewController.Configuration()
-        config.entersReaderIfAvailable = true
         config.barCollapsingEnabled = true
         
         super.init(url: widgetURL, configuration: config)
