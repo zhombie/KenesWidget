@@ -1,6 +1,6 @@
 import SafariServices
 
-public final class KenesWidet: SFSafariViewController {
+public final class KenesWidget: SFSafariViewController {
     public enum Language: String {
         case ru
         case kz
@@ -10,7 +10,7 @@ public final class KenesWidet: SFSafariViewController {
     public init?(_ url: URL, language: Language = .kz) {
         guard let scheme = url.scheme,
             let host = url.host,
-            let widgetURL = URL(string: "\(scheme)://\(host)\(KenesWidet.widgetPath)\(language.rawValue)") else {
+            let widgetURL = URL(string: "\(scheme)://\(host)\(KenesWidget.widgetPath)\(language.rawValue)") else {
             return nil
         }
 
