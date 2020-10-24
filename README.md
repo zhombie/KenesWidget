@@ -11,8 +11,12 @@
 - Добавить Swift package
 
   - File -> Swift Packagess -> Add Package Dependency
-
   - Использовать URL https://github.com/zhombie/kenes-widget-ios
+
+Для установки через Cocoapods
+```
+pod 'KenesWidget'
+```
 
 - Импортировать сам виджет 
 ```swift
@@ -22,7 +26,7 @@ import KenesWidget
 - Добавить код создания виджета, использовать хост системы
 ```swift
 let url = URL(string: "https://example.com")!
-if let widget = KenesWidget(url) {
+if let widget = KenesVC(url) {
     present(widget, animated: true)
 }
 ```
